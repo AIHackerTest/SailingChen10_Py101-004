@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>实时天气</title>
+</head>
+<body>
+  <h1 align="center">查询城市实时天气</h1>
+  <form align="center" action="/user_request" method="get">
+    <input type="text" name="city" placeholder="请输入要查询的城市名">
+    <br>
+    <br>
+    <input type="submit" name="query" value="查询">
+    <input type="submit" name="history" value="历史">
+    <input type="submit" name="help" value="帮助">
+  </form>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
